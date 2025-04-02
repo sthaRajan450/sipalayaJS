@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #004d4d;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            margin: 50px auto;
+            background-color: #004d4d;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 32px;
+            text-align: center;
+        }
+
+
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            width: 200px;
+            padding: 5px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 120px;
+            padding: 10px;
+            background: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #b52b27;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Application Form</h1>
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" placeholder="Age" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter email address" required>
+            <br>
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <div class="radio-group">
+                <p><strong>Available Position:</strong></p>
+                <input type="radio" name="position" id="junior" value="Junior Developer">
+                <label for="junior">Junior Developer</label>
+
+                <input type="radio" name="position" id="mid" value="Mid-Level Developer">
+                <label for="mid">Mid-Level Developer</label>
+
+                <input type="radio" name="position" id="senior" value="Senior Developer">
+                <label for="senior">Senior Developer</label>
+            </div>
+
+            <div class="checkbox-group">
+                <p><strong>Programming Languages:</strong></p>
+                <input type="checkbox" name="language[]" id="java" value="Java">
+                <label for="java">Java</label>
+
+                <input type="checkbox" name="language[]" id="python" value="Python">
+                <label for="python">Python</label>
+
+                <input type="checkbox" name="language[]" id="javascript" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <label for="confirmpassword">Confirm Password:</label>
+            <input type="password" name="confirmpassword" id="confirmpassword" required>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
