@@ -34,31 +34,46 @@
 
 //returns only oodd
 
-function oddNumbersList(arr) {
-  let oddNumbers = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 !== 0) {
-      oddNumbers.push(arr[i]);
+// function oddNumbersList(arr) {
+//   let oddNumbers = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//       oddNumbers.push(arr[i]);
+//     }
+//   }
+//   return oddNumbers;
+// }
+// const odds = oddNumbersList([1, 2, 3, 4, 5]);
+// console.log(odds);
+
+// //find the maximum value
+// let arr = [2, 3, 4, 6, 7, 8];
+// let maxValue = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//   if (arr[i] > maxValue) {
+//     maxValue = arr[i];
+//   }
+// }
+// console.log(`Max value : ${maxValue}`);
+
+// //split the array into halfs
+// const mid = Math.ceil(arr.length / 2);
+// const firstHalf = arr.slice(0, mid);
+// const secondHalf = arr.slice(mid);
+// console.log(`First Half: ${firstHalf}`);
+// console.log(`Second Half: ${secondHalf}`);
+
+function largestNumber(array) {
+  let largestValue = array[0];
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > largestValue) {
+      largestValue = array[i];
     }
   }
-  return oddNumbers;
+  console.log(`Largest Number : ${largestValue}`);
 }
-const odds = oddNumbersList([1, 2, 3, 4, 5]);
-console.log(odds);
+largestNumber([93, 4, 5, 766, 4, 3, 6]);
 
-//find the maximum value
-let arr = [2, 3, 4, 6, 7, 8];
-let maxValue = arr[0];
-for (let i = 1; i < arr.length; i++) {
-  if (arr[i] > maxValue) {
-    maxValue = arr[i];
-  }
-}
-console.log(`Max value : ${maxValue}`);
 
-//split the array into halfs
-const mid = Math.ceil(arr.length / 2);
-const firstHalf = arr.slice(0, mid);
-const secondHalf = arr.slice(mid);
-console.log(`First Half: ${firstHalf}`);
-console.log(`Second Half: ${secondHalf}`);
+let currentDate=new Date(2025,4,12);  //getDay() retunrs 0-sunday to 6-saturday
+console.log(currentDate.toString())
