@@ -1,12 +1,12 @@
 console.log("github tutorial");
-//add changes
+//add changes or stage changes
 console.log('git add .')
 
 
-//commit 
+//commit changes
 console.log(`git commit -m 'message'`)
 
-//push
+//push to remote repository
 console.log('git push ')
 
 
