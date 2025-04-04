@@ -63,17 +63,51 @@
 // console.log(`First Half: ${firstHalf}`);
 // console.log(`Second Half: ${secondHalf}`);
 
-function largestNumber(array) {
-  let largestValue = array[0];
-  for (let i = 1; i < array.length; i++) {
-    if (array[i] > largestValue) {
-      largestValue = array[i];
-    }
-  }
-  console.log(`Largest Number : ${largestValue}`);
+// function largestNumber(array) {
+//   let largestValue = array[0];
+//   for (let i = 1; i < array.length; i++) {
+//     if (array[i] > largestValue) {
+//       largestValue = array[i];
+//     }
+//   }
+//   console.log(`Largest Number : ${largestValue}`);
+// }
+// largestNumber([93, 4, 5, 766, 4, 3, 6]);
+
+// let currentDate=new Date(2025,4,12);  //getDay() retunrs 0-sunday to 6-saturday
+// console.log(currentDate.toString())
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const newArray = array.slice(7, array.length); //returns a new array
+// console.log(newArray);
+
+// //every and some method returns boolean  value either true or false
+// const even = (elemen) => elemen % 2 === 0;
+// console.log(array.every(even));
+
+// //mutate the original array     --splice(stard point, count to delete, parameters to be added in place of removed items)
+// array.splice(2, 4, "rajan", "manish", "nabin", "pradip", "keshab", "sumit");
+// console.log(array);
+
+// 😂😂 self exploartion
+// let fullName = "Hello World";
+// let name = fullName.split("");
+// console.table(name);
+
+// let fullName = "Hello World";
+// let reversed = "";
+// for (let i = fullName.length - 1; i >= 0; i--) {
+//   reversed += fullName[i];
+// }
+// console.log(reversed)
+
+let str = "radar";
+let reverse = "";
+for (let i = str.length - 1; i >= 0; i--) {
+  reverse += str[i];
 }
-largestNumber([93, 4, 5, 766, 4, 3, 6]);
-
-
-let currentDate=new Date(2025,4,12);  //getDay() retunrs 0-sunday to 6-saturday
-console.log(currentDate.toString())
+if (reverse === str) {
+  console.log("Palindrome");
+} else {
+  console.log("Not palindrome");
+}
