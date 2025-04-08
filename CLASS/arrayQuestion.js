@@ -101,13 +101,85 @@
 // }
 // console.log(reversed)
 
-let str = "radar";
-let reverse = "";
-for (let i = str.length - 1; i >= 0; i--) {
-  reverse += str[i];
-}
-if (reverse === str) {
-  console.log("Palindrome");
-} else {
-  console.log("Not palindrome");
-}
+// let str = "radar";
+// let reverse = "";
+// for (let i = str.length - 1; i >= 0; i--) {
+//   reverse += str[i];
+// }
+// if (reverse === str) {
+//   console.log("Palindrome");
+// } else {
+//   console.log("Not palindrome");
+// }
+
+// const numbers = [1, 2, 4, 5, 7, 9, 0, 34, 4, 56, 3];
+// const evenNumbers = numbers.filter((number) => number > 0 && number % 2 === 0);
+// const sum = evenNumbers.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   0
+// );
+// console.log(evenNumbers);
+// console.log(sum);
+
+let products = [
+  {
+    id: 1,
+    price: 100,
+    name: "a",
+    qty: 1,
+  },
+  {
+    id: 2,
+    price: 200,
+    name: "b",
+    qty: 5,
+  },
+  {
+    id: 3,
+    price: 300,
+    name: "c",
+    qty: 10,
+  },
+  {
+    id: 4,
+    price: 100,
+    name: "d",
+    qty: 11,
+  },
+];
+
+// const priceEqualTo100 = products.filter((product) => product.price === 100);
+// console.log(priceEqualTo100);
+
+// const doubledPriceProducts = products.map((product) => product.price * 2);
+// console.log(doubledPriceProducts)
+
+// const count = products.reduce((acc) => acc + 1, 0);
+// // const count=products.length;
+// const totalPrice = products.reduce((acc, product) => product.price + acc, 0);
+// console.log(
+//   `There are total ${count} products and the total price is ${totalPrice}`
+// );
+
+// const quantityOfProducts = products.reduce(
+//   (acc, product) => product.qty + acc,
+//   0
+// );
+// console.log(`Total quanity of products: ${quantityOfProducts}`);
+
+// const totalPrice = products.reduce(
+//   (acc, product) => product.price * product.qty + acc,
+//   0
+// );
+// console.log(totalPrice)
+
+// const categoriesAdded = products.map((product) => (product.c = "Mobile"));
+
+const categoriesAdded = products.map(product => ({
+  ...product,
+  c: "Mobile"
+}));
+console.log(categoriesAdded)
+
+
+// console.log(products)
