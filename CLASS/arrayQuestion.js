@@ -175,11 +175,18 @@ let products = [
 
 // const categoriesAdded = products.map((product) => (product.c = "Mobile"));
 
-const categoriesAdded = products.map(product => ({
-  ...product,
-  c: "Mobile"
-}));
-console.log(categoriesAdded)
-
+// const categoriesAdded = products.map(product => ({
+//   ...product,
+//   c: "Mobile"
+// }));
+// console.log(categoriesAdded)
 
 // console.log(products)
+
+// const getProduct = (id) => products.find((product) => product.id === id);
+// const product = getProduct(4);
+// if (product) {
+//   console.log(product);
+// } else {
+//   console.log("Product does not exist");
+// }
